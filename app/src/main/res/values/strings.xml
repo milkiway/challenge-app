@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Challenge app</string>
+    <string name="challenge_accepted">Challenge accepted!</string>
+    <string name="action_search">Search</string>
+    <string name="no_posts">No posts found</string>
+    <string name="retry">Retry</string>
+
+    <string name="album_image">Album image</string>
+    <string name="photo_num_one">%d photo</string>
+    <string name="photo_num">%d photos</string>
+    <string name="delete_post">Delete post</string>
+    <string name="empty_post">You haven\'t selected any posts yet</string>
+</resources>

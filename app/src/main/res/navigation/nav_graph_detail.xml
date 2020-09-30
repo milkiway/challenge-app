@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/emptyFragment">
+
+   <fragment
+       android:id="@+id/emptyFragment"
+       android:name="com.challenge.challengeapp.view.detail.EmptyFragment"
+       android:label="@string/challenge_accepted" />
+
+   <fragment
+       android:id="@+id/detailFragment"
+       android:name="com.challenge.challengeapp.view.detail.DetailFragment"
+       android:label="@string/challenge_accepted" >
+      <action
+          android:id="@+id/action_detailFragment_to_imageViewFragment"
+          app:destination="@id/imageViewFragment" />
+   </fragment>
+   <fragment
+       android:id="@+id/imageViewFragment"
+       android:name="com.challenge.challengeapp.view.detail.ImageViewFragment"
+       android:label="@string/challenge_accepted" >
+      <argument
+          android:name="imageUrl"
+          app:argType="string" />
+   </fragment>
+
+</navigation>
